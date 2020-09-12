@@ -64,8 +64,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 **Screenshot(s):**
 
-![alt text](http://url/to/images/intakescreenshot.png)
-![screenshot(s) die een goed beeld geven van de website die je gaat maken](images/dummy-image.svg)
+<img width="499" alt="intakescreenshot" src="https://user-images.githubusercontent.com/55750162/92997451-ae8ecf80-f513-11ea-8f33-d75a9df96554.png">
 
 **Breakdown-schets(en):** 
 
