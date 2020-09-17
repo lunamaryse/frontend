@@ -38,7 +38,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ### Stand van zaken
 
-Ik heb besloten om aan de zelde website te werken als dat ik vorig jaar deed, namelijk; Thuisbezorgd.nl. Ik probeerde verder te gaan met de code die ik toen had geschreven maar merkte dat ik er niet veel van snapte en er erg van in de war raakte. Toen heb ik besloten om (a.h.v. mijn breakdownschets) de code helemaal opnieuw te schrijven. 
+Ik heb besloten om aan de zelfde website te werken als vorig jaar, namelijk; Thuisbezorgd.nl. Ik probeerde verder te gaan met de code die ik toen had geschreven maar merkte dat ik er niet veel van snapte en er erg van in de war raakte. Toen heb ik besloten om (a.h.v. mijn breakdownschets) de code helemaal opnieuw te schrijven. 
 
 Ik merk dat HTML mij redelijk afgaat. Ik herken de elementen en weet hoe ik ze moet nesten. Toen ik eenmaal aan CSS begon, merkte ik dat ik dit erg moeilijk vond. Dingen werkten niet zoals ik het in mijn hoofd had. Ik heb hier erg veel struggles mee, maar probeer goede moed te houden. Ik moet de fonts nog fixen en alle elementen op een goede manier positioneren. Ook moet ik mijn complete hamburgermenu en detailpagina nog uitwerken. 
 
