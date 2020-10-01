@@ -30,8 +30,18 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Voortgang 2 (week 5)
 
--same as voortgang 1-
+### Stand van zaken
 
+Ik heb de CSS van mijn index.html gefixt zo ver mogelijk. 
+
+**Screenshot(s):**
+
+<img width="209" alt="Schermafbeelding 2020-09-17 om 19 22 04" src="https://user-images.githubusercontent.com/55750162/93505516-411bde00-f91b-11ea-8dc0-422478c3730b.png">
+<img width="208" alt="Schermafbeelding 2020-09-17 om 19 22 12" src="https://user-images.githubusercontent.com/55750162/93505523-437e3800-f91b-11ea-9939-ecd969d45f9c.png">
+<img width="206" alt="Schermafbeelding 2020-09-17 om 19 22 19" src="https://user-images.githubusercontent.com/55750162/93505526-44af6500-f91b-11ea-8267-58635620f666.png">
+<img width="209" alt="Schermafbeelding 2020-09-17 om 19 22 32" src="https://user-images.githubusercontent.com/55750162/93505533-47aa5580-f91b-11ea-8eb5-f51164115b65.png">
+<img width="204" alt="Schermafbeelding 2020-09-17 om 19 22 39" src="https://user-images.githubusercontent.com/55750162/93505539-48db8280-f91b-11ea-96b1-da75d61d9396.png">
+<img width="207" alt="Schermafbeelding 2020-09-17 om 19 22 45" src="https://user-images.githubusercontent.com/55750162/93505541-4aa54600-f91b-11ea-95db-07526c1e3af8.png">
 
 
 ## Voortgang 1 (week 3)
