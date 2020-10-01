@@ -1,5 +1,633 @@
 /* CSS Document */
-*, *::after, *::before {
-  box-sizing:border-box;  
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
 }
 
+@font-face {
+    font-family: "avantgarde";
+    src: url('../fonts/AVGARDN_2.TTF');
+}
+
+@font-face {
+    font-family: "avantgardebold";
+    src: url('../fonts/AVGARDD_2.TTF');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* HEADER */
+
+header {
+    background-color: #FF8000;
+    color: white;
+}
+
+/* tekst header */
+h1 {
+    font-family: avantgardebold;
+    font-size: 36px;
+    text-align: center;
+}
+
+h2 {
+    font-family: avantgarde;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* navigatie thuisbezorgd*/
+nav {
+    padding: 16px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* logo thuisbezorgd header */
+nav ul li img {
+    height: 48px;
+    width: 162px;
+}
+
+/* hamburger menu header*/
+.line {
+    background: white;
+    height: .15rem;
+    width: 1.2rem;
+    padding: .1rem;
+    margin: .25rem;
+}
+
+/* zoekbalk header */
+form {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0 40px 0;
+}
+
+form input {
+    font-family: sans-serif;
+    padding: 15px;
+    font-size: .875rem;
+    border-style: none;
+}
+
+.zoekbalk {
+    color: darkgrey;
+    width: 260px;
+}
+
+.zoek {
+    background-color: #1574f5;
+    color: white;
+    width: 70px;
+}
+
+/* afbeelding header */
+.eten {
+    width: 100%;
+}
+
+
+/* MAIN */
+
+
+
+/* artikelen main: stappen en voordelen */
+article h3 {
+    margin: 60px 0 10px;
+    font-family: avantgarde;
+    font-size: 1.2rem;
+    color: #0a3847;
+    text-align: center;
+}
+
+.oranjetekst {
+    font-family: "avantgardebold";
+    font-size: 1.6rem;
+    color: #f80;
+    display: flex;
+    justify-content: center;
+}
+
+/* afbeeldingen artikelen */
+article img {
+    width: 140px;
+    display: flex;
+    margin: auto;
+}
+
+/* stappen thuisbezorgd */
+.stappen {
+    font-family: sans-serif;
+    font-size: 18px;
+    color: #0a3847;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* informatie over stappen */
+article p {
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #666;
+    display: flex;
+    justify-content: center;
+    margin: 10px 20px 20px;
+}
+
+/* opmaak unordered lists: stappen en voordelen */
+article ul {
+    padding: 20px;
+    list-style: none;
+}
+
+/* link naar video */
+ul li a p {
+    color: #1574f5;
+
+}
+
+/* advertentie thuisbezorgd app */
+.app {
+    width: 100%;
+    height: 400px;
+    background-image: url(../images/app.png);
+    background-size: cover;
+    padding: 60px 20px;
+}
+
+.app h2 {
+    text-align: left;
+    padding: 8px 20px;
+    color: white;
+    background-color: #261e1e;
+    margin: 10px;
+    font-family: "avantgardebold";
+    width: 75%;
+}
+
+.app h2:first-child {
+    width: 60%;
+}
+
+.app ul {
+    margin: 0;
+    padding: 0;
+}
+
+.app ul li {
+    display: flex;
+    margin: 10px;
+}
+
+.app ul li:first-child {
+    margin-top: 20px
+}
+
+/* afbeeldingen voordelen thuisbezorgd */
+
+.voordelen {
+    background-color: #f8f5f2;
+}
+
+.voordelen h3 {
+    margin: 0;
+    padding-top: 60px;
+}
+
+.voordelen ul {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+}
+
+.voordelen ul > li {
+    width: 80%;
+    background-color: white;
+}
+
+.voordelen ul li img {
+    width: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.voordelen ul li > ul li {
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle;
+}
+
+.voordelen ul li > ul img {
+    width: 20px;
+    margin: 0 10px;
+    height: 18px;
+}
+
+/* tekst voordelen thuisbezorgd */
+article h4 {
+    font-family: sans-serif;
+    font-size: 18px;
+    color: #0a3847;
+    text-align: center;
+}
+
+.voordelentekst li {
+    font-family: sans-serif;
+    font-size: 15px;
+    color: #666;
+    margin: 20px;
+}
+
+.blog h3 {
+    margin: 60px 10px 20px 10px;
+    font-family: "avantgarde";
+}
+
+.blog a p {
+    color: #1574f5;
+    font-family: "avantgarde";
+}
+
+.blog img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 240px;
+    height: 160px;
+}
+
+
+/* FOOTER */
+
+
+
+footer {
+    background-color: #183945;
+    color: white;
+    padding: 40px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+}
+
+.icons li {
+    margin: 10px 20px;
+}
+
+/* image centreren, bron: https://www.w3.org/Style/Examples/007/center.nl.html#block */
+
+footer img {
+    width: 260px;
+    height: 60px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer span {
+    text-align: center;
+    display: block;
+    margin: auto;
+    font-family: "avantgarde";
+}
+
+footer ul {
+    text-align: left;
+    padding: 20px;
+    list-style: none;
+    font-family: sans-serif;
+}
+
+footer a {
+    color: white;
+
+}
+
+.links {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.links li {
+    font-family: "avantgarde";
+    text-align: center;
+    margin: 10px;
+    font-size: 12px;
+}
+
+
+
+/* Media query for tablet >768px  */
+@media screen and (min-width: 768px) {
+
+
+    /* HEADER */
+
+    /* navigatie thuisbezorgd*/
+    nav {
+        padding: 16px;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    nav ul li img {
+        height: 48px;
+        width: 162px;
+    }
+
+    /* hamburger menu header*/
+    .line {
+        background: white;
+        height: .15rem;
+        width: 1.2rem;
+        padding: .1rem;
+        margin: .25rem;
+    }
+
+    /* tekst header */
+
+    h1 {
+        font-size: 46px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    /* zoekbalk header */
+    form input {
+        font-size: 15px;
+    }
+
+    .zoekbalk {
+        width: 360px;
+        height: 48px;
+    }
+
+    .zoek {
+        width: 80px;
+    }
+
+    /* afbeelding header */
+    .eten {}
+
+
+    /* MAIN */
+    --
+
+    /* artikelen main: stappen en voordelen */
+    article h3 {
+        margin: 60px 0 10px;
+        font-family: avantgarde;
+        font-size: 1.2rem;
+        color: #0a3847;
+        text-align: center;
+    }
+
+    .oranjetekst {
+        font-family: "avantgardebold";
+        font-size: 1.6rem;
+        color: #f80;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* afbeeldingen artikelen */
+    article img {
+        width: 140px;
+        display: flex;
+        margin: auto;
+    }
+
+    /* stappen thuisbezorgd */
+    .stappen {
+        font-family: sans-serif;
+        font-size: 18px;
+        color: #0a3847;
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    /* informatie over stappen */
+    article p {
+        font-family: sans-serif;
+        font-size: 14px;
+        color: #666;
+        display: flex;
+        justify-content: center;
+        margin: 10px 20px 20px;
+    }
+
+    /* opmaak unordered lists: stappen en voordelen */
+    article ul {
+        padding: 20px;
+        list-style: none;
+    }
+
+
+    /* link naar video */
+    ul li a p {
+        color: #1574f5;
+
+    }
+
+    /* advertentie thuisbezorgd app */
+    .app {
+        width: 100%;
+        height: 400px;
+        background-image: url(../images/app.png);
+        background-size: cover;
+        padding: 60px 20px;
+    }
+
+    .app h2 {
+        text-align: left;
+        padding: 8px 20px;
+        color: white;
+        background-color: #261e1e;
+        margin: 10px;
+        font-family: "avantgardebold";
+        width: 75%;
+    }
+
+    .app h2:first-child {
+        width: 60%;
+    }
+
+    .app ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    .app ul li {
+        display: flex;
+        margin: 10px;
+    }
+
+    .app ul li:first-child {
+        margin-top: 20px
+    }
+
+    /* afbeeldingen voordelen thuisbezorgd */
+
+    .voordelen {
+        background-color: #f8f5f2;
+    }
+
+    .voordelen h3 {
+        margin: 0;
+        padding-top: 60px;
+    }
+
+    .voordelen ul {
+        display: flex;
+        justify-content: center;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .voordelen ul > li {
+        width: 80%;
+        background-color: white;
+    }
+
+    .voordelen ul li img {
+        width: 100px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .voordelen ul li > ul li {
+        display: flex;
+        flex-direction: row;
+        vertical-align: middle;
+    }
+
+    .voordelen ul li > ul img {
+        width: 20px;
+        margin: 0 10px;
+        height: 18px;
+    }
+
+    /* tekst voordelen thuisbezorgd */
+    article h4 {
+        font-family: sans-serif;
+        font-size: 18px;
+        color: #0a3847;
+        text-align: center;
+    }
+
+    .voordelentekst li {
+        font-family: sans-serif;
+        font-size: 15px;
+        color: #666;
+        margin: 20px;
+    }
+
+    .blog h3 {
+        margin: 60px 10px 20px 10px;
+        font-family: "avantgarde";
+    }
+
+    .blog a p {
+        color: #1574f5;
+        font-family: "avantgarde";
+    }
+
+    .blog img {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 240px;
+        height: 160px;
+    }
+
+
+    /* FOOTER */
+
+
+
+    footer {
+        background-color: #183945;
+        color: white;
+        padding: 40px;
+    }
+
+    .icons {
+        display: flex;
+        justify-content: center;
+    }
+
+    .icons li {
+        margin: 10px 20px;
+    }
+
+    /* image centreren, bron: https://www.w3.org/Style/Examples/007/center.nl.html#block */
+
+    footer img {
+        width: 260px;
+        height: 60px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    footer span {
+        text-align: center;
+        display: block;
+        margin: auto;
+        font-family: "avantgarde";
+    }
+
+    footer ul {
+        text-align: left;
+        padding: 20px;
+        list-style: none;
+        font-family: sans-serif;
+    }
+
+    footer a {
+        color: white;
+
+    }
+
+    .links {
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .links li {
+        font-family: "avantgarde";
+        text-align: center;
+        margin: 10px;
+        font-size: 12px;
+    }
+}
+
+/*Media query for desktop <992px */
+@media only screen and (min-width: 992px) {}
