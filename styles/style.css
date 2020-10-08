@@ -7,12 +7,12 @@
 
 @font-face {
     font-family: "avantgarde";
-    src: url('./fonts/avantgarde.ttf');
+    src: url('../fonts/AVGARDN_2.TTF');
 }
 
 @font-face {
     font-family: "avantgardebold";
-    src: url('./fonts/avantgarde.bold.ttf');
+    src: url('../fonts/AVGARDD_2.TTF');
 }
 
 * {
@@ -21,11 +21,12 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+}
 
 
 /* HEADER */
-
-
 
 header {
     background-color: #FF8000;
@@ -36,11 +37,12 @@ header {
 h1 {
     font-family: avantgardebold;
     font-size: 36px;
+    padding: 0 16px 16px 16px;
     text-align: center;
 }
 
 h2 {
-    font-family: avantgarde;
+    font-family: avantgardebold;
     font-size: 18px;
     text-align: center;
 }
@@ -50,7 +52,7 @@ nav {
     padding: 16px;
 }
 
-nav ul {
+nav > ul {
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -63,45 +65,147 @@ nav ul li img {
     width: 162px;
 }
 
-/* hamburger menu header*/
-.line {
+/* hamburger menu*/
+
+.hamburger {
+    padding: 1em;
+    padding-top: 10;
+    padding-right: 0;
+}
+
+.hamburger div div {
+    width: 4em;
+    height: 4em;
+    padding: 1em;
+}
+
+.hamburger span {
+    display: block;
+    position: relative;
+}
+
+.hamburger span,
+.hamburger span::before,
+.hamburger span::after {
+    width: 1.5em;
+    height: 3px;
     background: white;
-    height: .15rem;
-    width: 1.2rem;
-    padding: .1rem;
-    margin: .25rem;
+    transition: transform 400ms ease-in-out;
+}
+
+.hamburger span::before,
+.hamburger span::after {
+    content: '';
+    position: absolute;
+}
+
+.hamburger span::before {
+    bottom: 6px;
+}
+
+.hamburger span::after {
+    top: 6px;
+}
+
+.hamburger span.active::before {
+    opacity: 0;
+}
+
+.hamburger span.active {
+    transform: rotate(45deg);
+}
+
+.hamburger span.active::after {
+    transform: rotate(90deg) translate(-6px);
+}
+
+.inloggen {
+    width: 175px;
+    height: 40px;
+    font-family: 'avantgardebold';
+    background-color: white;
+    color: #1574F5;
+    margin-right: 10px;
+    border-color: grey;
+}
+
+.account {
+    height: 40px;
+    width: 175px;
+    font-family: 'avantgardebold';
+    margin-left: 10px;
+    background-color: #1574F5;
+    color: white;
+    border: 0px;
+}
+
+.hamburgerul {
+    text-align: center;
+    position: fixed;
+    transition: .4s;
+    height: 100vh;
+    width: 103vw;
+    transform: translateY(-200%);
+    background: white;
+    padding-top: 30px;
+    z-index: 1000;
+    background-color: white;
+    color: black;
+    font-family: "avantgarde";
+    display: flex;
+    flex-flow: column;
+}
+
+.hamburgerul li {
+    margin: 10px 0;
+}
+
+.hamburgerul li form {
+    padding: 0px;
+}
+
+.animator {
+    transform: translate(-82%, 4%);
 }
 
 /* zoekbalk header */
 form {
     display: flex;
     justify-content: center;
-    padding: 15px 0 40px 0;
+    padding: 16px 0 43.2px 0;
+    width: 90%;
+    margin-left: 5%;
+    width:
 }
 
-form input {
+.zoekbalk {
+    width: 209.69px;
+    height: 48px;
     font-family: sans-serif;
     padding: 15px;
     font-size: .875rem;
     border-style: none;
-}
-
-.zoekbalk {
-    color: darkgrey;
-    width: 260px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
 }
 
 .zoek {
     background-color: #1574f5;
     color: white;
-    width: 70px;
+    width: 80.31px;
+    height: 48px;
+    border-style: none;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
 }
 
 /* afbeelding header */
 .eten {
+    background-image: url(../images/homepagefood.jpg);
     width: 100%;
+    height: 200px;
+    background-size: cover;
 }
-
 
 
 /* MAIN */
@@ -118,7 +222,7 @@ article h3 {
 }
 
 .oranjetekst {
-    font-family: sans-serif;
+    font-family: "avantgardebold";
     font-size: 1.6rem;
     color: #f80;
     display: flex;
@@ -160,33 +264,88 @@ article ul {
 
 /* link naar video */
 ul li a p {
-    color: blue;
+    color: #1574f5;
+
 }
 
 /* advertentie thuisbezorgd app */
 .app {
     width: 100%;
-    height: 380px;
-    background-image: url(./images/app.png);
+    height: 400px;
+    background-image: url(../images/app.png);
     background-size: cover;
+    padding: 60px 20px;
 }
 
 .app h2 {
     text-align: left;
-    padding: 50px 20px 20px;
+    font-size: 18px;
     color: white;
+    background-color: #261e1e;
+    margin: 10px;
+    padding: 8px;
+    font-family: "avantgardebold";
+    width: 78%;
+}
+
+.app h2:first-child {
+    width: 66%;
+}
+
+.app ul {
+    margin: 0;
+    padding: 0;
 }
 
 .app ul li {
     display: flex;
-    margin: 20px 20px;
+    margin: 10px;
+}
+
+.app ul li:first-child {
+    margin-top: 20px
 }
 
 /* afbeeldingen voordelen thuisbezorgd */
+
 .voordelen {
+    background-color: #f8f5f2;
+}
+
+.voordelen h3 {
+    margin: 0;
+    padding-top: 60px;
+    padding-bottom: 15px;
+}
+
+.voordelen ul {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+}
+
+.voordelen ul > li {
+    width: 80%;
+    background-color: white;
+}
+
+.voordelen ul li img {
     width: 100px;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+.voordelen ul li > ul li {
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle;
+}
+
+.voordelen ul li > ul img {
+    width: 20px;
+    margin: 0 10px;
+    height: 18px;
 }
 
 /* tekst voordelen thuisbezorgd */
@@ -204,15 +363,29 @@ article h4 {
     margin: 20px;
 }
 
-.blog h4 {
-    font-size: 14px;
+.blog {
+    text-align: center;
+}
+
+.blog h3 {
+    font-family: "avantgarde";
+    font-size: 22.4px;
+    padding: 20px;
+
+}
+
+.blog a p {
+    color: #1574f5;
+    font-family: "avantgarde";
+    margin: 20px 0 0 0;
 }
 
 .blog img {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 60px;
+    width: 300px;
+    height: 181px;
 }
-
 
 
 /* FOOTER */
@@ -222,29 +395,41 @@ article h4 {
 footer {
     background-color: #183945;
     color: white;
-    padding: 40px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+}
+
+.icons li {
+    margin: 10px;
 }
 
 /* image centreren, bron: https://www.w3.org/Style/Examples/007/center.nl.html#block */
 
+footer {
+    text-align: center;
+}
+
 footer img {
-    width: 260px;
-    height: 60px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    width: 310px;
+    padding: 15px;
+
 }
 
 footer span {
+    font-size: 16px;
     text-align: center;
     display: block;
     margin: auto;
-    font-family: avantgarde;
+    font-family: "avantgardebold";
+    margin: 15px;
 }
 
 footer ul {
     text-align: left;
-    padding: 20px;
+    padding: 15px;
     list-style: none;
     font-family: sans-serif;
 }
@@ -254,283 +439,165 @@ footer a {
 
 }
 
+.links {
+    margin-top: 0;
+    padding-top: 0;
+}
 
-@media only screen and (min-width: 570px) {
+.links li {
+    font-family: "avantgarde";
+    text-align: left;
+    margin: 30px;
+    font-size: 12px;
+}
 
-    article h3 {
-        margin:
+
+
+/* Media query for tablet >768px  */
+@media screen and (min-width: 768px) {
+    .eten {
+        height: 400px;
+    }
+
+    .blog {
+        display: flex;
+        flex-flow: row;
+    }
+
+    .app {
+        background-size: cover;
+        background-position: 40% 70%;
+    }
+
+    .app h2 {
+        width: 30%;
+    }
+
+    .app h2:first-child {
+        width: 25%;
     }
 }
 
-@media only screen and (min-width: 1004px) {}
+/*Media query for desktop <992px */
+@media only screen and (min-width: 992px) {
 
+    header h1 {
+        font-size: 72px;
+        text-align: center;
+        padding-left: 400px;
+        padding-right: 400px;
+    }
 
+    header h2 {
+        font-size: 26px;
+    }
 
+    .zoekbalk {
+        width: 832px;
+        height: 48px;
+    }
 
+    .zoek {
+        width: 166px;
+        height: 48px;
+    }
 
+    article ul {
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
 
+    article ul li {
+        width: 400px;
+    }
 
+    .app {
+        height: 500px;
+        background-size: 28%;
+        background-color: #ff8000;
+        background-image: url(../images/app.desktop.png);
+        background-repeat: no-repeat;
+        background-position: 70%;
+        padding-left: 10%;
+    }
 
+    .app h2 {
+        font-size: 2em;
+        width: 30%;
+    }
 
+    .app h2:first-child {
+        width: 25%;
+    }
 
+    .app ul {
+        display: block;
+    }
 
+    .voordelen > ul {
+        flex-flow: row;
+    }
 
+    .voordelen > ul > li {
+        width: 25%;
+        margin: 0 2% 2%;
+        height: 425px;
+    }
 
+    .voordelentekst {
+        flex-flow: column;
+    }
 
+    .blog h3,
+    .blog p {
+        width: 50%;
+        text-align: left;
+        margin-left: 20%;
+        padding: 0;
+    }
 
+    .blog img {
+        width: 400px;
+        height: 250px;
+        margin-top: 60px;
+    }
 
-
-
-
-/*a.link:visited {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+    .icons {
+        justify-content: space-around;
+    }
 }
 
+.detailpagina {
 
-.navigatie {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    float: right;
+    /* Media query for mobile <768px  */
+    @media screen and (max-width: 768px) {}
+
+    /* Media query for tablet >768px  */
+    @media screen and (min-width: 768px) {}
+
+    /*Media query for desktop <992px */
+    @media only screen and (min-width: 992px) {}
+
+    /*scrollbar 
+    main {
+        width: 100%;
+        max-width: 100vw;
+    }
+
+    main section {
+        background: white;
+        overflow-x: scroll;
+        padding: 1em;
+        display: flex;
+        flex-direction: row;
+    }
+
+    section article {
+        min-width: 80vw;
+        margin: 1em;
+        padding: 1em;
+        background: orange;
+    }*/
 }
-
-/* hamburgermenu en nav
-nav {
-    position: fixed;
-    transform: translateX(-150%);
-    transition-duration: .5s;
-}
-
-.animator {
-    transform: translateX(-50%);
-}
-
-.hamburger {
-    display: flex;
-    flex-direction: column;
-    margin: 2em;
-    padding: 2em;
-}
-
-.line {
-    border-bottom: 1px solid black;
-    height: .5em;
-    width: 2em;
-}
-
-/*complex
-.active > div:first-child {
-    transform: rotate;
-    transition-duration: .2s;
-    position: relative;
-    top: .5rem;
-}
-
-/* style footer
-footer p {
-    font-family: arial;
-    font-size: 12px;
-}
-*/
-/* style navigatie 
-nav {
-    background-color: orangered;
-    color: white;
-    text-align: center;
-    padding: px 0 4px 0;
-    font-family: arial black;
-}
-
-nav ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    list-style: none;
-}
-
-nav ul li {
-    width: 15rem;
-    background: orangered;
-    list-style-type: none;
-    text-align: center;
-    margin-bottom: 1rem;
-    color: white;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: orange;
-}
-
-nav ul li a:hover {
-    text-decoration: none;
-    color: blue;
-}
-*/
-
-/*
-.hamburger {
-    display: flex;
-    flex-direction: column;
-    margin: 2em;
-    padding: 2em;
-}
-
-.line {
-    border-bottom: 1px solid black;
-    height: .5em;
-    width: 2em;
-}
-
-.navigatie {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    float: right;
-}
-*/
-
-
-/* header {
-    position: absolute;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-*/
-
-/* 
-
-/*style tekst in body + achtergrond van website
-body {
-    background-color: #E28438;
-    font-family: Open Sans, Helvetica, sans-serif;
-    font-size: 16px;
-    color: black;
-}
-*/
-/*style h's
-h1 {
-    text-align: center;
-    font-family: Open Sans, Helvetica, sans-serif;
-    font-size: 35px;
-    color: white;
-}
-
-h2 {
-    font-family: Open Sans, Helvetica, sans-serif;
-    font-size: 20px;
-    color: white;
-}
-*/
-/* style p's 
-p {
-    text-align: center;
-    font-family: Open Sans, Helvetica, sans-serif;
-    font-size: 20px;
-    color: white;
-}
-
-p.align-left {
-    text-align: left;
-}
-*/
-/*style quote
-q {
-    font-family: fantasy;
-}
-*/
-/* style navigatie 
-nav {
-    background-color: orangered;
-    color: white;
-    text-align: center;
-    padding: px 0 4px 0;
-    font-family: arial black;
-}
-
-nav ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    list-style: none;
-}
-
-nav ul li {
-    width: 15rem;
-    background: orangered;
-    list-style-type: none;
-    text-align: center;
-    margin-bottom: 1rem;
-    color: white;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: orange;
-}
-
-nav ul li a:hover {
-    text-decoration: none;
-    color: blue;
-}
-*/
-
-/* style links in tekst 
-a.link:link {
-    color: lawngreen;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-a.link:visited {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}*/
-
-/*
- stijl link bronvermelding a {
-     color: lawngreen;
-     text-decoration: none;
-     font-weight: bold;
- }
-*/
-/*
-
-style footer
-footer p {
-    text-align: center;
-    font-family: arial;
-    font-size: 12px;
-}
-*/
-/*.logomobiel {
-    width: 100px;
-    height: 100px;
-}
-
-.homepagefood {
-    width: 700px;
-    height: 450px;
-    padding: 50px;
-    align-content: center;
-}
-
-header {
-    position: absolute;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-*/
-
-
-.detail > section {}
-
-.detail header {}
