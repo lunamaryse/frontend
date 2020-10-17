@@ -15,6 +15,11 @@
     src: url('../fonts/AVGARDD_2.TTF');
 }
 
+@font-face {
+    font-family: "robotoslab";
+    src: url('../fonts/RobotoSlab-Regular.ttf');
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -33,13 +38,16 @@ header {
     color: white;
 }
 
-/* tekst header */
+/* tijd om eten te bestellen */
+
 h1 {
     font-family: avantgardebold;
     font-size: 36px;
     padding: 0 16px 16px 16px;
     text-align: center;
 }
+
+/* vind restaurants bij jou in de buurt */
 
 h2 {
     font-family: avantgardebold;
@@ -48,6 +56,7 @@ h2 {
 }
 
 /* navigatie thuisbezorgd*/
+
 nav {
     padding: 16px;
 }
@@ -60,6 +69,7 @@ nav > ul {
 }
 
 /* logo thuisbezorgd header */
+
 nav ul li img {
     height: 48px;
     width: 162px;
@@ -168,7 +178,9 @@ nav ul li img {
     transform: translate(-82%, 4%);
 }
 
+
 /* zoekbalk header */
+
 form {
     display: flex;
     justify-content: center;
@@ -212,7 +224,8 @@ form {
 
 
 
-/* artikelen main: stappen en voordelen */
+/* zo werkt thuisbezorgd.nl */
+
 article h3 {
     margin: 60px 0 10px;
     font-family: avantgarde;
@@ -220,6 +233,8 @@ article h3 {
     color: #0a3847;
     text-align: center;
 }
+
+/* super simpel! */
 
 .oranjetekst {
     font-family: "avantgardebold";
@@ -229,7 +244,8 @@ article h3 {
     justify-content: center;
 }
 
-/* afbeeldingen artikelen */
+/* images stappen */
+
 article img {
     width: 140px;
     display: flex;
@@ -237,6 +253,7 @@ article img {
 }
 
 /* stappen thuisbezorgd */
+
 .stappen {
     font-family: sans-serif;
     font-size: 18px;
@@ -246,7 +263,6 @@ article img {
     padding: 20px;
 }
 
-/* informatie over stappen */
 article p {
     font-family: sans-serif;
     font-size: 14px;
@@ -257,18 +273,20 @@ article p {
 }
 
 /* opmaak unordered lists: stappen en voordelen */
+
 article ul {
     padding: 20px;
     list-style: none;
 }
 
-/* link naar video */
+/* link naar video met stappen*/
+
 ul li a p {
     color: #1574f5;
 
 }
 
-/* advertentie thuisbezorgd app */
+/* app van thuisbezorgd */
 .app {
     width: 100%;
     height: 400px;
@@ -306,13 +324,17 @@ ul li a p {
     margin-top: 20px
 }
 
+
 /* afbeeldingen voordelen thuisbezorgd */
 
 .voordelen {
     background-color: #f8f5f2;
 }
 
-.voordelen h3 {
+.voordelen h3
+
+/* thuisbezorgd.nl */
+    {
     margin: 0;
     padding-top: 60px;
     padding-bottom: 15px;
@@ -395,6 +417,7 @@ article h4 {
 footer {
     background-color: #183945;
     color: white;
+    padding-bottom: 53px;
 }
 
 .icons {
@@ -406,7 +429,6 @@ footer {
     margin: 10px;
 }
 
-/* image centreren, bron: https://www.w3.org/Style/Examples/007/center.nl.html#block */
 
 footer {
     text-align: center;
@@ -521,11 +543,13 @@ footer a {
         background-repeat: no-repeat;
         background-position: 70%;
         padding-left: 10%;
+        background-position: bottom;
     }
 
     .app h2 {
         font-size: 2em;
         width: 30%;
+        /* fit content */
     }
 
     .app h2:first-child {
@@ -569,35 +593,222 @@ footer a {
     }
 }
 
-.detailpagina {
 
-    /* Media query for mobile <768px  */
-    @media screen and (max-width: 768px) {}
 
-    /* Media query for tablet >768px  */
-    @media screen and (min-width: 768px) {}
 
-    /*Media query for desktop <992px */
-    @media only screen and (min-width: 992px) {}
+/* OPMAAK DETAILPAGINA */
 
-    /*scrollbar 
-    main {
-        width: 100%;
-        max-width: 100vw;
-    }
 
-    main section {
-        background: white;
-        overflow-x: scroll;
-        padding: 1em;
-        display: flex;
-        flex-direction: row;
-    }
 
-    section article {
-        min-width: 80vw;
-        margin: 1em;
-        padding: 1em;
-        background: orange;
-    }*/
+/* HEADER */
+
+
+.detailpagina header {
+    width: 100%;
 }
+
+.detailpagina nav {
+    padding: 16px;
+    margin: 0;
+}
+
+.detailpagina li img {
+    width: 28px;
+    height: 28px;
+}
+
+.detailpagina nav h2 {
+    width: 180px;
+    height: 25px;
+    font-size: 16px;
+    color: white;
+    background-color: #FF8000;
+    font-family: "avantgardebold";
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+.detailpagina nav ul {
+    align-items: center;
+}
+
+.detailpagina .hamburger {
+    padding: 0;
+    margin: 5px;
+    margin-top: 10px;
+}
+
+.detailpagina .toolbar {
+    display: flex;
+    z-index: 10;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    height: 53px;
+}
+
+.detailpagina .toolbar ul {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    list-style-type: none;
+}
+
+.detailpagina .toolbar ul li {
+    padding: 0 25%;
+}
+
+.detailpagina .toolbar ul li img {
+    text-align: center;
+    width: 16px;
+    height: 18px;
+}
+
+.detailpagina .toolbar ul li:first-child img {
+    text-align: center;
+    width: 70px;
+    height: 25px;
+}
+
+/* Media query for tablet >768px  */
+@media screen and (min-width: 768px) {}
+
+/*Media query for desktop <992px */
+@media only screen and (min-width: 992px) {}
+
+
+
+
+/* MAIN */
+
+
+.detailpagina main {
+    width: 100%;
+    max-width: 100vw;
+}
+
+.detailpagina main img {
+    width: 100%;
+}
+
+.detailpagina h1 {
+    color: black;
+    width: 100%;
+    height: auto;
+    font-size: 20px;
+    padding: 40px;
+    background-image: url(images/pizza.jpg);
+}
+
+.detailpagina h3 {
+    font-family: "avantgardebold";
+    color: #0a3847;
+    padding: 10px;
+}
+
+.typeoffood {
+    background: #f8f5f2;
+    overflow-x: scroll;
+    padding: 12.px;
+    display: flex;
+    flex-direction: row;
+}
+
+.typeoffood article {
+    min-width: fit-content;
+    height: auto;
+    margin: 0.5em;
+    padding: 12px;
+    border-radius: 4em;
+    background: #f8f5f2;
+    font-family: "robotoslab", "avantgarde";
+}
+
+.detailpagina article:hover {
+    background: #FF8000;
+    color: white;
+}
+
+
+.result {
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    justify-content: center;
+}
+
+.result div:first-child {
+    width: 110px;
+    height: auto;
+}
+
+.result div:first-child img {
+    width: 110px;
+    height: 120px;
+}
+
+.result div:nth-child(2) img {
+    width: 20px;
+    height: 18px;
+}
+
+.result div:nth-child(2) span {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.result div:nth-child(2) span p {
+    font-size: 14px;
+}
+
+.result div:nth-child(2) {
+    padding: 4px;
+    width: 65%;
+    height: auto;
+}
+
+.result div {
+    border: 1px solid lightgray;
+    border-radius: 3px;
+}
+
+.result h2 {
+    text-align: left;
+    font-size: 18px;
+    font-family: "avantgardebold";
+    color: #0a3847;
+}
+
+.result div p {
+    margin: 2px;
+    font-family: "robotoslab", "avantgarde";
+    font-size: 13px;
+    color: #666666;
+}
+
+
+/* FOOTER */
+
+.detailpagina footer {
+    padding: 35px 42px 60px 42px;
+}
+
+.detailpagina footer li {
+    padding: 0;
+    margin: 30px 0;
+    font-size: 14px;
+    text-align: center;
+}
+
+.detailpagina footer li:hover {
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+/* Media query for tablet >768px  */
+@media screen and (min-width: 768px) {}
+
+/*Media query for desktop <992px */
+@media only screen and (min-width: 992px) {}
