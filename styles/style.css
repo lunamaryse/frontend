@@ -136,7 +136,7 @@ nav ul li img {
     background-color: white;
     color: #1574F5;
     margin-right: 10px;
-    border-color: grey;
+    border: 1px solid lightgray;
 }
 
 .account {
@@ -161,13 +161,16 @@ nav ul li img {
     z-index: 1000;
     background-color: white;
     color: black;
-    font-family: "avantgarde";
+    font-family: "avantgardebold";
     display: flex;
     flex-flow: column;
 }
 
 .hamburgerul li {
     margin: 10px 0;
+    font-family: "avantgardebold";
+    font-size:
+        color: #0A3847;
 }
 
 .hamburgerul li form {
@@ -498,317 +501,450 @@ footer a {
     .app h2:first-child {
         width: 25%;
     }
-}
 
-/*Media query for desktop <992px */
-@media only screen and (min-width: 992px) {
 
-    header h1 {
-        font-size: 72px;
-        text-align: center;
-        padding-left: 400px;
-        padding-right: 400px;
-    }
-
-    header h2 {
-        font-size: 26px;
-    }
-
-    .zoekbalk {
-        width: 832px;
-        height: 48px;
-    }
-
-    .zoek {
-        width: 166px;
-        height: 48px;
-    }
-
-    article ul {
-        display: flex;
-        flex-flow: row;
-        justify-content: center;
-        align-items: flex-start;
-    }
-
-    article ul li {
-        width: 400px;
-    }
-
-    .app {
-        height: 500px;
-        background-size: 28%;
-        background-color: #ff8000;
-        background-image: url(../images/app.desktop.png);
-        background-repeat: no-repeat;
-        background-position: 70%;
-        padding-left: 10%;
-        background-position: bottom;
-    }
-
-    .app h2 {
-        font-size: 2em;
-        width: 30%;
-        /* fit content */
-    }
-
-    .app h2:first-child {
-        width: 25%;
-    }
-
-    .app ul {
-        display: block;
-    }
-
-    .voordelen > ul {
-        flex-flow: row;
-    }
-
-    .voordelen > ul > li {
-        width: 25%;
-        margin: 0 2% 2%;
-        height: 425px;
-    }
-
-    .voordelentekst {
-        flex-flow: column;
-    }
-
-    .blog h3,
-    .blog p {
-        width: 50%;
-        text-align: left;
-        margin-left: 20%;
+    /* hamburger menu*/
+    .inloggen {
+        width: 360px;
+        font-size: 16px;
         padding: 0;
     }
 
-    .blog img {
-        width: 400px;
-        height: 250px;
-        margin-top: 60px;
+    .account {
+        width: 360px;
+        font-size: 16px;
+        padding: 0;
     }
 
-    .icons {
-        justify-content: space-around;
+    .hamburgerul {
+        padding-top: 40px;
+        color: black;
+        font-family: "avantgarde";
+        display: flex;
+        flex-flow: column;
     }
-}
+
+    .hamburgerul li {
+        font-size: 20px;
+        margin-top: 30px;
+    }
+
+    .animator {
+        transform: translate(-90%, 2%);
+    }
+
+    /*Media query for desktop <992px */
+    @media only screen and (min-width: 992px) {
+
+        header h1 {
+            font-size: 72px;
+            text-align: center;
+            padding-left: 400px;
+            padding-right: 400px;
+        }
+
+        header h2 {
+            font-size: 26px;
+        }
+
+        .zoekbalk {
+            width: 832px;
+            height: 48px;
+        }
+
+        .zoek {
+            width: 166px;
+            height: 48px;
+        }
+
+        article ul {
+            display: flex;
+            flex-flow: row;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        article ul li {
+            width: 400px;
+        }
+
+        .app {
+            height: 500px;
+            background-size: 28%;
+            background-color: #ff8000;
+            background-image: url(../images/app.desktop.png);
+            background-repeat: no-repeat;
+            background-position: 70%;
+            padding-left: 10%;
+            background-position: bottom;
+        }
+
+        .app h2 {
+            font-size: 2em;
+            width: 30%;
+            /* fit content */
+        }
+
+        .app h2:first-child {
+            width: 25%;
+        }
+
+        .app ul {
+            display: block;
+        }
+
+        .voordelen > ul {
+            flex-flow: row;
+        }
+
+        .voordelen > ul > li {
+            width: 25%;
+            margin: 0 2% 2%;
+            height: 425px;
+        }
+
+        .voordelentekst {
+            flex-flow: column;
+        }
+
+        .blog h3,
+        .blog p {
+            width: 50%;
+            text-align: left;
+            margin-left: 20%;
+            padding: 0;
+        }
+
+        .blog img {
+            width: 400px;
+            height: 250px;
+            margin-top: 60px;
+        }
+
+        .icons {
+            justify-content: space-around;
+        }
+    }
 
 
 
 
-/* OPMAAK DETAILPAGINA */
+    /* OPMAAK DETAILPAGINA */
 
 
 
-/* HEADER */
+    /* HEADER */
 
 
-.detailpagina header {
-    width: 100%;
-}
+    .detailpagina header {
+        width: 100%;
+    }
 
-.detailpagina nav {
-    padding: 16px;
-    margin: 0;
-}
+    .detailpagina nav {
+        padding: 16px;
+        margin: 0;
+    }
 
-.detailpagina li img {
-    width: 28px;
-    height: 28px;
-}
+    .detailpagina li {
+        list-style: none;
+    }
 
-.detailpagina nav h2 {
-    width: 180px;
-    height: 25px;
-    font-size: 16px;
-    color: white;
-    background-color: #FF8000;
-    font-family: "avantgardebold";
-    text-decoration: underline;
-    text-decoration-color: white;
-}
+    .detailpagina li img {
+        width: 28px;
+        height: 28px;
+    }
 
-.detailpagina nav ul {
-    align-items: center;
-}
+    .detailpagina nav li a img {
+        height: 15px;
+        width: 15px;
+        margin: 0;
+        padding: 0;
+    }
 
-.detailpagina .hamburger {
-    padding: 0;
-    margin: 5px;
-    margin-top: 10px;
-}
+    .detailpagina nav h2 {
+        width: 180px;
+        height: 25px;
+        font-size: 16px;
+        color: white;
+        background-color: #FF8000;
+        font-family: "avantgardebold";
+        text-decoration: underline;
+        text-decoration-color: white;
+    }
 
-.detailpagina .toolbar {
-    display: flex;
-    z-index: 10;
-    width: 100%;
-    background-color: white;
-    position: fixed;
-    bottom: 0;
-    height: 53px;
-}
-
-.detailpagina .toolbar ul {
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    list-style-type: none;
-}
-
-.detailpagina .toolbar ul li {
-    padding: 0 25%;
-}
-
-.detailpagina .toolbar ul li img {
-    text-align: center;
-    width: 16px;
-    height: 18px;
-}
-
-.detailpagina .toolbar ul li:first-child img {
-    text-align: center;
-    width: 70px;
-    height: 25px;
-}
-
-/* Media query for tablet >768px  */
-@media screen and (min-width: 768px) {}
-
-/*Media query for desktop <992px */
-@media only screen and (min-width: 992px) {}
+    .detailpagina nav ul {
+        align-items: center;
+    }
 
 
+    .detailpagina .hamburger {
+        padding: 0;
+        margin: 8px;
+        margin-top: 10px;
+    }
+
+    .detailpagina .inloggen {
+        width: 162px;
+        margin: 5px;
+
+    }
+
+    .detailpagina .account {
+        width: 162px;
+        margin: 5px;
+    }
+
+    .detailpagina .toolbar {
+        display: flex;
+        z-index: 10;
+        width: 100%;
+        background-color: white;
+        position: fixed;
+        bottom: 0;
+        height: 53px;
+    }
+
+    .detailpagina .toolbar ul {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        list-style-type: none;
+    }
+
+    .detailpagina .toolbar ul li {
+        padding: 0 18%;
+    }
+
+    .detailpagina .toolbar ul li:first-child img {
+        padding: 0;
+    }
+
+    .detailpagina .toolbar ul li img {
+        text-align: center;
+        margin-top: 12px;
+        width: 15px;
+        height: 16px;
+    }
+
+    .detailpagina .toolbar ul li:first-child img {
+        text-align: center;
+        margin-top: 5px;
+        width: 90px;
+        height: 30px;
+    }
+
+    /* Media query for tablet >768px  */
+    @media screen and (min-width: 768px) {}
+
+    /*Media query for desktop <992px */
+    @media only screen and (min-width: 992px) {}
 
 
-/* MAIN */
 
 
-.detailpagina main {
-    width: 100%;
-    max-width: 100vw;
-}
-
-.detailpagina main img {
-    width: 100%;
-}
-
-.detailpagina h1 {
-    color: black;
-    width: 100%;
-    height: auto;
-    font-size: 20px;
-    padding: 40px;
-    background-image: url(images/pizza.jpg);
-}
-
-.detailpagina h3 {
-    font-family: "avantgardebold";
-    color: #0a3847;
-    padding: 10px;
-}
-
-.typeoffood {
-    background: #f8f5f2;
-    overflow-x: scroll;
-    padding: 12.px;
-    display: flex;
-    flex-direction: row;
-}
-
-.typeoffood article {
-    min-width: fit-content;
-    height: auto;
-    margin: 0.5em;
-    padding: 12px;
-    border-radius: 4em;
-    background: #f8f5f2;
-    font-family: "robotoslab", "avantgarde";
-}
-
-.detailpagina article:hover {
-    background: #FF8000;
-    color: white;
-}
+    /* MAIN */
 
 
-.result {
-    background-color: #fff;
-    display: flex;
-    flex-direction: row;
-    margin: 10px;
-    justify-content: center;
-}
+    .detailpagina main {
+        width: 100%;
+        max-width: 100vw;
+    }
 
-.result div:first-child {
-    width: 110px;
-    height: auto;
-}
+    .detailpagina main img {
+        width: 100%;
+    }
 
-.result div:first-child img {
-    width: 110px;
-    height: 120px;
-}
+    .detailpagina h1 {
+        padding: 60px 20px;
+        font-size: 25px;
+        background-image: url(../images/pizza.png);
+        background-size: cover;
+        background-position: center;
+        color: white;
+    }
 
-.result div:nth-child(2) img {
-    width: 20px;
-    height: 18px;
-}
+    .detailpagina h3 {
+        font-family: "avantgardebold";
+        color: #0a3847;
+        padding: 10px;
+    }
 
-.result div:nth-child(2) span {
-    display: flex;
-    flex-wrap: wrap;
-}
+    .typeoffood {
+        background: #f8f5f2;
+        overflow-x: scroll;
+        padding: 12.px;
+        display: flex;
+        flex-direction: row;
+    }
 
-.result div:nth-child(2) span p {
-    font-size: 14px;
-}
+    .typeoffood article {
+        min-width: fit-content;
+        height: auto;
+        margin: 0.5em;
+        padding: 12px;
+        border-radius: 4em;
+        background: #f8f5f2;
+        font-family: "robotoslab", "avantgarde";
+    }
 
-.result div:nth-child(2) {
-    padding: 4px;
-    width: 65%;
-    height: auto;
-}
-
-.result div {
-    border: 1px solid lightgray;
-    border-radius: 3px;
-}
-
-.result h2 {
-    text-align: left;
-    font-size: 18px;
-    font-family: "avantgardebold";
-    color: #0a3847;
-}
-
-.result div p {
-    margin: 2px;
-    font-family: "robotoslab", "avantgarde";
-    font-size: 13px;
-    color: #666666;
-}
+    .detailpagina article:hover {
+        background: #FF8000;
+        color: white;
+    }
 
 
-/* FOOTER */
+    .result {
+        background-color: #fff;
+        display: flex;
+        flex-direction: row;
+        margin: 10px;
+        justify-content: center;
+    }
 
-.detailpagina footer {
-    padding: 35px 42px 60px 42px;
-}
+    .result div:first-child {
+        width: 110px;
+        height: auto;
+    }
 
-.detailpagina footer li {
-    padding: 0;
-    margin: 30px 0;
-    font-size: 14px;
-    text-align: center;
-}
+    .result div:first-child img {
+        width: 110px;
+        height: 120px;
+    }
 
-.detailpagina footer li:hover {
-    text-decoration: underline;
-    text-decoration-color: white;
-}
+    .result div:nth-child(2) img {
+        width: 20px;
+        height: 18px;
+    }
 
-/* Media query for tablet >768px  */
-@media screen and (min-width: 768px) {}
+    .result div:nth-child(2) span {
+        display: flex;
+        flex-wrap: wrap;
+    }
 
-/*Media query for desktop <992px */
-@media only screen and (min-width: 992px) {}
+    .result div:nth-child(2) span p {
+        font-size: 14px;
+    }
+
+    .result div:nth-child(2) {
+        padding: 4px;
+        width: 65%;
+        height: auto;
+    }
+
+    .result div {
+        border: 1px solid lightgray;
+        border-radius: 3px;
+    }
+
+    .result h2 {
+        text-align: left;
+        font-size: 18px;
+        font-family: "avantgardebold";
+        color: #0a3847;
+    }
+
+    .result div p {
+        margin: 2px;
+        font-family: "robotoslab", "avantgarde";
+        font-size: 13px;
+        color: #666666;
+    }
+
+
+    /* FOOTER */
+
+    .detailpagina footer {
+        padding: 35px 42px 60px 42px;
+    }
+
+    .detailpagina footer li {
+        padding: 0;
+        margin: 30px 0;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .detailpagina footer li:hover {
+        text-decoration: underline;
+        text-decoration-color: white;
+    }
+
+
+    /* Media query for extra responsive > 410px  */
+    @media screen and (min-width: 410px) {
+
+        .result div:first-child {
+            width: 138px;
+            height: auto;
+        }
+
+        .result div:first-child img {
+            width: 130px;
+            height: 140px;
+        }
+
+        .result div:nth-child(2) {
+            padding: 4px;
+            width: 80%;
+            height: auto;
+        }
+
+        .result div span {
+            padding-top: 60px;
+        }
+
+        .detailpagina .toolbar ul li {
+            padding: 0 30%;
+        }
+
+    }
+
+
+    /* Media query for extra responsive > 590px  */
+    @media screen and (min-width: 590px) {
+
+        .detailpagina .toolbar ul li {
+            padding: 0 50%;
+        }
+    }
+
+    /* Media query for tablet >768px  */
+    @media screen and (min-width: 768px) {
+
+        .detailpagina h1 {
+            font-size: 30px;
+            padding: 70px;
+        }
+
+        .detailpagina h3 {
+            padding-left: 15px;
+        }
+
+        .detailpagina .toolbar ul li {
+            padding: 0 70%;
+        }
+
+        .detailpagina footer {
+            padding-top: 20px;
+            padding-bottom: 53px;
+        }
+
+        .detailpagina footer ul {
+            list-style-type: none;
+            overflow: hidden;
+        }
+
+        .detailpagina footer li {
+            float: left;
+            font-size: 14px;
+        }
+
+        .detailpagina footer li a {
+            text-align: center;
+            padding: 0 16px;
+            text-decoration: none;
+        }
+
+
+        /*Media query for desktop <992px */
+        @media only screen and (min-width: 992px) {}
