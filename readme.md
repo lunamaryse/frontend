@@ -14,16 +14,31 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 6. https://www.w3schools.com/cssref/css3_pr_flex-flow.asp - flex-flow
 7. https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 8. https://flexboxfroggy.com/#nl
+9. https://netspecialist.nl/html-en-css/445-css-tips-deel-2-child-selecties
+10. HTML & CSS: Design and Build Web Sites, Jon Duckett
+11. JavaScript & Jquery: Interactive Front-End Web Development, Jon Duckett
+12. Hulp van Guus en Jelmer als ik een vraag had over styling
+13. https://stackoverflow.com/questions/3303675/how-to-make-an-input-type-button-act-like-a-hyperlink-and-redirect-using-a-get-r
+
 
 
 
 ## Eindgesprek (week 7/8)
 
--dit ging goed & dit was lastig-
+- Ik vond de styling van de website erg lastig, ik heb veel dingen terug moeten lezen in de boeken van Jon Duckett en veel op moeten zoeken op internet. Als ik er zelf echt niet uitkwam, vroeg ik hulp aan Jelmer of Guus. Zij gaven vaak slimme tips. Dit zorgde ervoor dat ik niet vast bleef lopen. 
+- Door de uitleg van Janno snapte ik hoe ik een hamburgermenu kon invoegen in mijn website. Dit heeft mij erg veel geholpen, omdat ik zelf geen idee had hoe dat werkte.
+- Ik merk dat ik vergeleken met vorig jaar sneller dingen snap en toepas (ook omdat ik meer tijd in frontend heb gestoken). Ik snap nu beter hoe je elementen kan stylen.
 
 **Screenshot(s):**
 
--screenshot(s) van je eindresultaat-
+-<img width="1440" alt="Schermafbeelding 2020-10-18 om 17 48 45" src="https://user-images.githubusercontent.com/55750162/96373048-52e6e000-116a-11eb-8ed2-8624f8f02962.png">
+<img width="1440" alt="Schermafbeelding 2020-10-18 om 17 48 48" src="https://user-images.githubusercontent.com/55750162/96373052-54180d00-116a-11eb-9dea-1c724f8fd4f2.png">
+<img width="1440" alt="Schermafbeelding 2020-10-18 om 17 48 50" src="https://user-images.githubusercontent.com/55750162/96373054-55e1d080-116a-11eb-94d7-f0f74bc20012.png">
+<img width="1440" alt="Schermafbeelding 2020-10-18 om 17 48 53" src="https://user-images.githubusercontent.com/55750162/96373056-5712fd80-116a-11eb-8677-914c7277af6d.png">
+<img width="1440" alt="Schermafbeelding 2020-10-18 om 17 48 54" src="https://user-images.githubusercontent.com/55750162/96373057-58442a80-116a-11eb-8408-305c9c2c6c69.png">
+<img width="1440" alt="Schermafbeelding 2020-10-18 om 17 49 02" src="https://user-images.githubusercontent.com/55750162/96373058-5a0dee00-116a-11eb-9009-fd05bdea3f22.png">
+<img width="1440" alt="Schermafbeelding 2020-10-18 om 17 49 07" src="https://user-images.githubusercontent.com/55750162/96373059-5bd7b180-116a-11eb-9097-e2e14d60951e.png">
+<img width="1440" alt="Schermafbeelding 2020-10-18 om 17 49 10" src="https://user-images.githubusercontent.com/55750162/96373067-5f6b3880-116a-11eb-8665-284d014047a1.png">
 
 
 
