@@ -858,6 +858,10 @@ footer a {
     justify-content: center;
 }
 
+.result article:hover {
+    background-color: white;
+}
+
 .result div:first-child {
     width: 110px;
     height: auto;
