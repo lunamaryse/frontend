@@ -5,111 +5,198 @@
     <meta charset="UTF-8">
     <meta name="Thuisbezorgd" content="Luna de Fauw">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <title>Thuisbezorgd</title>
 
+    <!-- CSS -->
     <link href="styles/style.css" rel="stylesheet">
 
 </head>
 
 <body>
-
+    <!-- Header (oranje vlak en navigatie)-->
     <header>
+
+        <!-- Navigatiebalk bovenaan scherm -->
         <nav>
+
+            <!-- Inhoud navigatiebalk -->
             <ul>
+
+                <!-- Thuisbezorgd logo linksbovenin -->
                 <li><img src="./images/thuisbezorgd.logo.png" alt="logo thuisbezorgd"></li>
+                <!-- Hamburgermenu -->
+
                 <li>
+                    <!-- Streepjes hamburgermenu -->
                     <div class="hamburger">
                         <div class="click">
                             <span>
                             </span>
                         </div>
                     </div>
+
+                    <!-- Inhoud hamburgermenu -->
                     <ul class="hamburgerul">
+
                         <li>
+                            <!-- Knoppen inloggen en account in hamburgermenu-->
                             <form action="inloggenofaccount">
                                 <input class="inloggen" type="submit" value="Inloggen">
                                 <input class="account" type="submit" value="Account">
                             </form>
+
                         </li>
+
+                        <!-- Lijst met links in hamburgermenu-->
                         <li>Bestellingen</li>
                         <li>Favorieten</li>
                         <li>Bonuswinkel</li>
                         <li>Stempelkaarten</li>
                         <li>Hulp nodig?</li>
                         <li>Takeaway Pay (B2B)</li>
+
                     </ul>
                 </li>
+
             </ul>
         </nav>
 
+        <!-- Eerste titel, H1 -->
         <h1>Tijd om eten te bestellen</h1>
+
+        <!-- Ondertitel, H2-->
         <h2>Vind restaurants bij jou in de buurt</h2>
 
-        <form src="detailpagina.html" method="get">
+        <!-- Zoekbalk (locatie of adres) -->
+        <form action="detailpagina.html" method="get">
             <input class="zoekbalk" type="text" placeholder="Adres, b.v. Amstelplein 10">
-            <a href="detailpagina.html"><input class="zoek" type="button" value="Zoek"></a>
+            <input class="zoek" type="submit" value="Zoek">
         </form>
     </header>
 
+    <!-- Main, inhoud van de pagina -->
     <main>
-
+        <!-- Image van eten (afbeelding bovenaan pagina)-->
         <div class="eten"></div>
 
+        <!-- Uitleg over thuisbezorgd in stappen -->
         <article>
+            <!-- Kop, H3 -->
             <h3>Zo werkt Thuisbezorgd.nl</h3>
+            <!-- Span, oranje tekst onder kop-->
             <span class="oranjetekst">Supersimpel!</span>
+
+            <!-- Lijst van stappen-->
             <ul>
-                <li><img class src="./images/thuisbezorgdstap1.png" alt="">
-                    <span class="stappen">Locatie invoeren</span> <!-- overflow -->
+
+                <!-- Stap locatie invoeren -->
+                <li>
+                    <!-- Image locatie -->
+                    <img class src="./images/thuisbezorgdstap1.png" alt="">
+                    <!-- Titel van de stap -->
+                    <span class="stappen">Locatie invoeren</span>
+                    <!-- Uitleg van de stap -->
                     <p>Voer je adres in, of laat ons je positie bepalen.</p>
                 </li>
-                <li><img src="./images/thuisbezorgdstap2.png" alt="">
+
+                <!-- Stap kies je restaurant en gerecht -->
+                <li>
+                    <!-- Image restaurant gerecht kiezen -->
+                    <img src="./images/thuisbezorgdstap2.png" alt="">
+                    <!-- Titel van de stap -->
                     <span class="stappen">Kies je restaurant en gerecht</span>
+                    <!-- Uitleg van de stap -->
                     <p>Waar heb je zin in? Scroll door talloze menu's en beoordelingen.</p>
                 </li>
-                <li><img src="./images/thuisbezorgdstap3.png" alt="">
+
+                <!-- Stap Betaal en laat het eten bezorgen -->
+                <li>
+                    <!-- Image betalen en laten bezorgen -->
+                    <img src="./images/thuisbezorgdstap3.png" alt="">
+                    <!-- Titel van de stap -->
                     <span class="stappen">Betaal en laat het eten bezorgen</span>
+                    <!-- Uitleg van de stap -->
                     <p>Betaal contant of online met IDEAL, Creditcard, PayPal, Bitcoin. Eet smakelijk!</p>
+                    <!-- Link naar video met uitleg over de stappen van Thuisbezorgd -->
                     <a href="https://vimeo.com/107451661">
+                        <!-- Tekst die weergeven wordt op de site -->
                         <p>Bekijk video</p>
                     </a>
                 </li>
+
             </ul>
+
         </article>
 
+        <!-- Advertentie van de Thuisbezorgd app -->
         <article class="app">
+            <!-- Kopjes van de advertentie, H2-->
             <h2>Download de app</h2>
             <h2>Klik, ontspan en geniet.</h2>
+            <!-- Links naar google play en app store, weergeven als afbeelding -->
+
             <ul>
-                <li><a href="https://play.google.com/store/apps/details?id=com.takeaway.android&referrer=adjust_reftag%3Dc7913B2XpculE%26utm_source%3Dnl%257Candroid%257Cmainsite%26utm_campaign%3Dhomepage-button%26utm_medium%3Dsite"><img src="./images/googleplay.png" alt="googleplay"></a></li>
-                <li><a href="https://apps.apple.com/app/id329472759?mt=8"><img src="./images/appstore.png" alt="appstore"></a></li>
+                <!-- Link naar google play -->
+                <li><a href="https://play.google.com/store/apps/details?id=com.takeaway.android&referrer=adjust_reftag%3Dc7913B2XpculE%26utm_source%3Dnl%257Candroid%257Cmainsite%26utm_campaign%3Dhomepage-button%26utm_medium%3Dsite">
+                        <!-- Afbeelding die zichtbaar is op de website als link naar google play -->
+                        <img src="./images/googleplay.png" alt="googleplay"></a></li>
+                <!-- Link naar app store -->
+                <li><a href="https://apps.apple.com/app/id329472759?mt=8">
+                        <!-- Afbeelding die zichtbaar is op de website als link naar appstore -->
+                        <img src="./images/appstore.png" alt="appstore"></a></li>
             </ul>
         </article>
 
+        <!-- Onderdeel bonus, garantie en voordelen van Thuisbezorgd -->
         <article class="voordelen">
+
+            <!-- Kop bonus, garantie en voordelen, H3 -->
             <h3>Thuisbezorgd.nl</h3>
+
+            <!-- Span, oranje tekst onder kop -->
             <span class="oranjetekst">Jouw tijd.</span>
+
+            <!-- Unordered list met onderdelen bonus, garantie en voordelen  -->
             <ul>
-                <!--vanaf hier tot /li weer plakken -->
-                <li><img src="./images/jouwextraatjes.png" alt="extraatjes">
+
+                <!-- Onderdeel Bonus (extraatjes) -->
+                <li>
+                    <!-- Image, oranje cirkel met tasje en % -->
+                    <img src="./images/jouwextraatjes.png" alt="extraatjes">
+                    <!-- Titel van het onderdeel -->
                     <h4>Jouw extraatjes</h4>
+                    <!-- Toelichting onderdeel -->
                     <ul class="voordelentekst">
+                        <!-- Listitems -->
                         <li><img src="./images/vinkje.png" alt="vinkje">Onze bonuswinkel: ontdek hoge kortingen en gave prijzen</li>
                         <li><img src="./images/vinkje.png" alt="vinkje">Ontvang stempels, kortingen, promoties, nieuws en meer via onze nieuwsbrief en social media</li>
                     </ul>
                 </li>
-                <li><img src="./images/jouwgarantie.png" alt="garantie">
+
+                <!-- Onderdeel Garantie -->
+                <li>
+                    <!-- Image, oranje cirkel met kroon -->
+                    <img src="./images/jouwgarantie.png" alt="garantie">
+                    <!-- Titel van het onderdeel -->
                     <h4>Jouw garantie</h4>
+                    <!-- Toelichting onderdeel -->
                     <ul class="voordelentekst">
+                        <!-- Listitems -->
                         <li><img src="./images/vinkje.png" alt="vinkje">De beste service, gratis</li>
                         <li><img src="./images/vinkje.png" alt="vinkje">Authentieke beoordelingen</li>
                         <li><img src="./images/vinkje.png" alt="vinkje">Prijsgarantie: je betaalt net zoveel voor je bezorgde maaltijd als wanneer je direct bij het restaurant bestelt.</li>
                     </ul>
                 </li>
-                <li><img src="./images/jouwvoordelen.png" alt="voordelen">
+
+                <!-- Onderdeel Voordelen -->
+                <li>
+                    <!-- Image, oranje cirkel met vinkje -->
+                    <img src="./images/jouwvoordelen.png" alt="voordelen">
+                    <!-- Titel van het onderdeel -->
                     <h4>Jouw voordelen</h4>
+                    <!-- Toelichting onderdeel -->
                     <ul class="voordelentekst">
+                        <!-- Listitems -->
                         <li><img src="./images/vinkje.png" alt="vinkje">De meeste keus dankzij 8000+ aangesloten restaurants</li>
                         <li><img src="./images/vinkje.png" alt="vinkje">Betaal contant of online</li>
                         <li><img src="./images/vinkje.png" alt="vinkje">Bestel waar en wanneer je wilt, op ieder apparaat</li>
@@ -118,26 +205,32 @@
             </ul>
         </article>
 
+        <!-- Advertentie voor het blog -->
         <article class="blog">
+            <!-- Tekst van de advertentie -->
             <div>
+                <!-- Kop van de advertentie, H3 -->
                 <h3>Zin in meer? <br>
                     Op ons blog vind je interessante nieuwtjes op het gebied van food en lifestyle!</h3>
+                <!-- Link naar het blog -->
                 <a href="https://www.thuisbezorgd.nl/blog/">
+                    <!-- Tekst die wordt weergeven als link naar het blog -->
                     <p>> Naar het blog</p>
                 </a>
             </div>
+            <!-- Image van de blog advertentie, laptop -->
             <img src="images/laptopthuisbezorgd.png" alt="laptop met website">
         </article>
     </main>
 
+    <!-- Footer van de website -->
     <footer>
 
-        <!-- p en b weghalen, gebruik bold font. thuisbezorgd logo ipv h2 -->
-
-        <!-- logo -->
+        <!-- Logo Thuisbezorgd -->
         <img src="./images/thuisbezorgd.logo2.png" alt="logo thuisbezorgd">
+        <!-- Span, roept aan tot volgen op social media -->
         <span>Follow us</span>
-        <!-- social link setup -->
+        <!-- Social link setup -->
         <ul class="icons">
             <li><a href="https://www.facebook.com/thuisbezorgd"></a>Facebook</li>
             <li><a href="https://twitter.com/thuisbezorgd"></a>Twitter</li>
@@ -145,6 +238,7 @@
             <li><a href="https://www.thuisbezorgd.nl/blog/"></a>Blog</li>
         </ul>
 
+        <!-- Links footer -->
         <ul class="links">
             <li><a href="https://www.thuisbezorgd.nl/aanbevelen">Restaurant aanbevelen</a></li>
             <li><a href="https://www.thuisbezorgd.nl/aanmelden">Restaurant aanmelden</a></li>
@@ -158,18 +252,9 @@
 
     </footer>
 
-    <link rel="script" href="script.js">
+    <!-- Link naar SCRIPT -->
     <script src="scripts/script.js"></script>
+
 </body>
 
 </html>
-
-
-<!-- <div class="hamburger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </div> -->
-
-<!-- kleur oranje #F49739 
-    footer #183745-->

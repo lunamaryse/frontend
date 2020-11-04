@@ -8,9 +8,12 @@
 
     <title>Thuisbezorgd</title>
 
+    <!-- CSS -->
     <link href="styles/style.css" rel="stylesheet">
 
 </head>
+
+<!-- Body detailpagina, class gebruiken voor styling -->
 
 <body class="detailpagina">
 
@@ -18,27 +21,48 @@
     <!-- HEADER EN NAVIGATIE DETAILPAGINA -->
 
 
+    <!-- Header (oranje vlak balk bovenin scherm)-->
     <header>
+
+        <!-- Navigatiebalk bovenaan scherm -->
         <nav>
+
+            <!-- Inhoud navigatiebalk -->
             <ul>
-                <li><a href="index.html"><img src="images/backbutton.svg" alt="backbutton"><img src="./images/thuisbezorgdmobiel.png" alt="logo thuisbezorgd"></a></li>
+
+                <!-- Back button (pijltje wit), navigeert terug naar vorige pagina -->
+                <li>
+                    <a href="index.html"><img src="images/backbutton.svg" alt="backbutton"><img src="./images/thuisbezorgdmobiel.png" alt="logo thuisbezorgd"></a>
+                </li>
+
+                <!-- Ingevoerde zoekopdracht -->
                 <li>
                     <h2>Schiphol Airport</h2>
                 </li>
+
+                <!-- Hamburgermenu -->
                 <li>
+
+                    <!-- Icoon hamburgermenu -->
                     <div class="hamburger">
                         <div class="click">
                             <span>
                             </span>
                         </div>
                     </div>
+
+                    <!-- Inhoud hamburgermenu -->
                     <ul class="hamburgerul">
+
+                        <!-- Knoppen inloggen en account in hamburgermenu-->
                         <li>
                             <form action="inloggenofaccount">
                                 <input class="inloggen" type="submit" value="Inloggen">
                                 <input class="account" type="submit" value="Account">
                             </form>
                         </li>
+
+                        <!-- Lijst met links in hamburgermenu-->
                         <li>Bestellingen</li>
                         <li>Favorieten</li>
                         <li>Bonuswinkel</li>
@@ -46,11 +70,16 @@
                         <li>Hulp nodig?</li>
                         <li>Takeaway Pay (B2B)</li>
                     </ul>
+
                 </li>
+
             </ul>
         </nav>
 
+        <!-- Toolbar onderin scherm-->
         <section class="toolbar">
+
+            <!-- Inhoud toolbar-->
             <ul>
                 <li><img src="images/bezorgen.svg" alt="bezorgenofafhalen"></li>
                 <li><img src="images/filter.svg" alt="filteren"></li>
@@ -62,8 +91,10 @@
     </header>
 
     <main>
+        <!-- Aantal relevante restaurants, H1 -->
         <h1>Bestel bij 10 restaurants</h1>
 
+        <!-- Categorieën eten (types of food), horizontaal scrollen -->
         <section class="typeoffood">
             <article>Alles</article>
             <article>Italiaanse Pizza</article>
@@ -77,163 +108,226 @@
             <article>Meer tonen</article>
         </section>
 
+
         <!-- RESULTATEN -->
 
+        <!-- New York Pizza -->
         <section class="result">
+
+            <!-- Image logo restaurant, links -->
             <div>
                 <img src="images/nypizza.png" alt="logo">
             </div>
+
+            <!-- Informatie over restaurant, rechts -->
             <div>
                 <h2>New York Pizza</h2>
                 <p>Italiaanse pizza, Amerikaanse pizza</p>
-                <span>
+                <article>
                     <p><img src="images/klokje.png" alt="klokje">v.a. 16:00</p>
                     <p><img src="images/fietsje.png" alt="fietsje">GRATIS</p>
                     <p><img src="images/tasje.png" alt="tasje">Min. €7,99</p>
-                </span>
+                </article>
             </div>
+
         </section>
 
+        <!-- Il delfino blu -->
         <section class="result">
+
+            <!-- Image logo restaurant, links -->
             <div>
                 <img src="images/ildelfinoblu.png" alt="logo">
             </div>
+
+            <!-- Informatie over restaurant, rechts -->
             <div>
                 <h2>Il Delfino Blu/Pizzameester</h2>
                 <p>Snacks, Italiaanse pizza, Turks</p>
-                <span>
+                <article>
                     <p><img src="images/klokje.png" alt="klokje">35 min</p>
                     <p><img src="images/fietsje.png" alt="fietsje">€1,99</p>
                     <p><img src="images/tasje.png" alt="tasje">Min. €25,00</p>
-                </span>
+                </article>
             </div>
+
         </section>
 
+        <!-- De Ophelia -->
         <section class="result">
+
+            <!-- Image logo restaurant, links -->
             <div>
                 <img src="images/ophelia.png" alt="logo">
             </div>
+
+            <!-- Informatie over restaurant, rechts -->
             <div>
                 <h2>De Ophelia</h2>
                 <p>Italiaanse pizza, Döner, Kapsalon</p>
-                <span>
+                <article>
                     <p><img src="images/klokje.png" alt="klokje">35 min</p>
                     <p><img src="images/fietsje.png" alt="fietsje">€2,00</p>
                     <p><img src="images/tasje.png" alt="tasje">Min. €15,00</p>
-                </span>
+                </article>
             </div>
+
         </section>
 
+        <!-- Sino O -->
         <section class="result">
+
+            <!-- Image logo restaurant, links -->
             <div>
                 <img src="images/sinoo.png" alt="logo">
             </div>
+
+            <!-- Informatie over restaurant, rechts -->
             <div>
                 <h2>Sino O</h2>
                 <p>Italiaanse pizza, Shoarma, Döner</p>
-                <span>
+                <article>
                     <p><img src="images/klokje.png" alt="klokje">25 min</p>
                     <p><img src="images/fietsje.png" alt="fietsje">GRATIS</p>
                     <p><img src="images/tasje.png" alt="tasje">Min. €15,00</p>
-                </span>
+                </article>
             </div>
+
         </section>
 
+        <!-- Tastefull Delivery -->
         <section class="result">
+
+            <!-- Image logo restaurant, links -->
             <div>
                 <img src="images/tastefulldelivery.png" alt="logo">
             </div>
+
+            <!-- Informatie over restaurant, rechts -->
             <div>
                 <h2>Tastefull Delivery</h2>
                 <p>Italiaanse pizza, Turks, Shoarma</p>
-                <span>
+                <article>
                     <p><img src="images/klokje.png" alt="klokje">30 min</p>
                     <p><img src="images/fietsje.png" alt="fietsje">€2,00</p>
                     <p><img src="images/tasje.png" alt="tasje">Min. €20,00</p>
-                </span>
+                </article>
             </div>
+
         </section>
 
+        <!-- The food kingz -->
         <section class="result">
+
+            <!-- Image logo restaurant, links -->
             <div>
                 <img src="images/foodkingz.png" alt="logo">
             </div>
+
+            <!-- Informatie over restaurant, rechts -->
             <div>
                 <h2>The Food Kingz</h2>
                 <p>Dranken, Italiaanse pizza, Döner</p>
-                <span>
+                <article>
                     <p><img src="images/klokje.png" alt="klokje">v.a. 21:45</p>
                     <p><img src="images/fietsje.png" alt="fietsje">€1,50</p>
                     <p><img src="images/tasje.png" alt="tasje">Min. €35,00</p>
-                </span>
+                </article>
             </div>
+
         </section>
 
+        <!-- Pizza late night -->
         <section class="result">
+            <!-- Image logo restaurant, links -->
             <div>
                 <img src="images/pizzalatenight.png" alt="logo">
             </div>
+
+            <!-- Informatie over restaurant, rechts -->
             <div>
                 <h2>Pizza Late Night</h2>
                 <p>Spareribs, Italiaanse pizza, 100% Halal</p>
-                <span>
+                <article>
                     <p><img src="images/klokje.png" alt="klokje">v.a. 20:00</p>
                     <p><img src="images/fietsje.png" alt="fietsje">€2,00</p>
                     <p><img src="images/tasje.png" alt="tasje">Min. €25,00</p>
-                </span>
+                </article>
             </div>
+
         </section>
 
+        <!-- Cospariano -->
         <section class="result">
+
+            <!-- Image logo restaurant, links -->
             <div>
                 <img src="images/cospariano.png" alt="logo">
             </div>
+
+            <!-- Informatie over restaurant, rechts -->
             <div>
                 <h2>Cospariano</h2>
                 <p>Italiaans, Italiaanse pizza, Shoarma</p>
-                <span>
+                <article>
                     <p><img src="images/klokje.png" alt="klokje">v.a. 17:00</p>
                     <p><img src="images/fietsje.png" alt="fietsje">€1,50</p>
                     <p><img src="images/tasje.png" alt="tasje">Min. €10,00</p>
-                </span>
+                </article>
             </div>
+
         </section>
 
+        <!-- Pane e vino -->
         <section class="result">
+
+            <!-- Image logo restaurant, links -->
             <div>
                 <img src="images/paneevino.png" alt="logo">
             </div>
+
+            <!-- Informatie over restaurant, rechts -->
             <div>
                 <h2>Pane e Vino</h2>
                 <p>Italiaans, Italiaanse pizza, Shoarma</p>
-                <span>
+                <article>
                     <p><img src="images/klokje.png" alt="klokje">v.a. 17:00</p>
                     <p><img src="images/fietsje.png" alt="fietsje">€2,00</p>
                     <p><img src="images/tasje.png" alt="tasje">Min. €35,00</p>
-                </span>
+                </article>
             </div>
+
         </section>
 
-
+        <!-- Titel, h3, restaurants hieronder zijn gesloten voor bezorging -->
         <h3>Gesloten voor bezorging</h3>
 
+
+        <!-- Pizza & Burgers 020 -->
         <section class="result">
+
+            <!-- Image logo restaurant, links -->
             <div>
                 <img src="images/020.png" alt="logo">
             </div>
+
+            <!-- Informatie over restaurant, rechts -->
             <div>
                 <h2>Pizza & Burgers 020</h2>
                 <p>Italiaanse pizza, Kip, Burgers</p>
-                <span>
+                <article>
                     <p><img src="images/klokje.png" alt="klokje">Gesloten voor bezorging</p>
-                </span>
+                </article>
             </div>
+
         </section>
 
     </main>
 
+    <!-- Footer Thuisbezorgd -->
     <footer>
 
+        <!-- Links footer -->
         <ul class="links">
             <li><a href="https://www.thuisbezorgd.nl/aanbevelen">Restaurant aanbevelen</a></li>
             <li><a href="https://www.thuisbezorgd.nl/aanmelden">Restaurant aanmelden</a></li>
@@ -245,20 +339,12 @@
             <li><a href="https://www.thuisbezorgd.nl/bugbounty">Bug Bounty</a></li>
             <li><a href="https://www.thuisbezorgd.nl/">@ 2020 Thuisbezorgd.nl</a></li>
         </ul>
+
     </footer>
 
-    <link rel="script" href="script.js">
+    <!-- Link naar SCRIPT -->
     <script src="scripts/script.js"></script>
+
 </body>
 
 </html>
-
-
-<!-- <div class="hamburger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </div> -->
-
-<!-- kleur oranje #F49739 
-    footer #183745-->

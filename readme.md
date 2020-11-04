@@ -1,9 +1,7 @@
 # Procesverslag
 **Auteur:** -Luna de Fauw-
 
-Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). Nb. de standaardstructuur en de spartaanse opmaak zijn helemaal prima. Het gaat om de inhoud van je procesverslag. Besteedt de tijd voor pracht en praal aan je website.
-
-
+**Link naar website :** https://lunamaryse.github.io/frontend/
 
 ## Bronnenlijst
 1. https://www.w3schools.com/cssref/css_units.asp - vh en vw
@@ -20,7 +18,14 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 12. Hulp van Guus en Jelmer als ik een vraag had over styling
 13. https://stackoverflow.com/questions/3303675/how-to-make-an-input-type-button-act-like-a-hyperlink-and-redirect-using-a-get-r
 
+## Herkansing 4 november (week 7/8)
 
+**Ik heb de feedback van het eerste gesprek verwerkt. De volgende punten heb ik aangepast:
+
+- Ik heb mijn code door de W3C validator gehaald en alle problemen verholpen.
+- Ik heb commentaar geschreven zodat mijn website makkelijk overgedragen kan worden.
+- Slordige foutjes heb ik verwijderd (denk aan elementen zonder styling).
+- Ik heb elementen nu logischer geplaatst en de structuur van mijn HTML is nu duidelijker.
 
 
 ## Eindgesprek (week 7/8)
@@ -95,15 +100,6 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 <img width="207" alt="Schermafbeelding 2020-09-17 om 19 22 45" src="https://user-images.githubusercontent.com/55750162/93505541-4aa54600-f91b-11ea-95db-07526c1e3af8.png">
 
 
-### Agenda voor meeting
-
--samen met je groepje opstellen-
-
-### Verslag van meeting
-
--na afloop snel uitkomsten vastleggen-
-
-
 
 ## Intake (week 1)
 
@@ -120,6 +116,4 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 **Breakdown-schets(en):** 
 
 <img width="240" alt="breakdownschets" src="https://user-images.githubusercontent.com/55750162/93504614-049bb280-f91a-11ea-9295-6d7cc652b15b.png">
-
-**Link naar website :** https://lunamaryse.github.io/frontend/
 

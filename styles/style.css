@@ -1,9 +1,11 @@
 /* CSS Document */
-*,
-*::after,
-*::before {
+* {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
+
+/* FONTS */
 
 @font-face {
     font-family: "avantgarde";
@@ -20,12 +22,7 @@
     src: url('../fonts/RobotoSlab-Regular.ttf');
 }
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
+/* Styling links */
 a {
     text-decoration: none;
 }
@@ -38,7 +35,7 @@ header {
     color: white;
 }
 
-/* tijd om eten te bestellen */
+/* "Tijd om eten te bestellen" */
 
 h1 {
     font-family: avantgardebold;
@@ -47,7 +44,7 @@ h1 {
     text-align: center;
 }
 
-/* vind restaurants bij jou in de buurt */
+/* "Vind restaurants bij jou in de buurt" */
 
 h2 {
     font-family: avantgardebold;
@@ -55,12 +52,15 @@ h2 {
     text-align: center;
 }
 
-/* navigatie thuisbezorgd home */
 
+/* Navigatie thuisbezorgd */
+
+/* Padding nav */
 nav {
     padding: 16px;
 }
 
+/* Styling unordered list navigatie */
 nav > ul {
     list-style: none;
     display: flex;
@@ -68,18 +68,19 @@ nav > ul {
     justify-content: space-between;
 }
 
-/* logo thuisbezorgd header home */
+/* Styling thuisbezorgdlogo */
 
 nav ul li img {
     height: 48px;
     width: 162px;
 }
 
-/* hamburger menu */
+
+/* STYLING HAMBURGERMENU ICOON */
 
 .hamburger {
     padding: 1em;
-    padding-top: 10;
+    padding-top: 10px;
     padding-right: 0;
 }
 
@@ -94,6 +95,7 @@ nav ul li img {
     position: relative;
 }
 
+/* Styling transformatie hamburgermenu */
 .hamburger span,
 .hamburger span::before,
 .hamburger span::after {
@@ -129,8 +131,10 @@ nav ul li img {
     transform: rotate(90deg) translate(-6px);
 }
 
-/* inhoud hamburgermenu */
 
+/* STYLING INHOUD HAMBURGERMENU */
+
+/* Styling knop inloggen */
 .inloggen {
     width: 175px;
     height: 40px;
@@ -141,6 +145,7 @@ nav ul li img {
     border: 1px solid lightgray;
 }
 
+/* Styling knop account */
 .account {
     height: 40px;
     width: 175px;
@@ -151,15 +156,18 @@ nav ul li img {
     border: 0px;
 }
 
+/* Styling knop inloggen bij hover */
 .inloggen:hover {
     background-color: darkblue;
     color: white;
 }
 
+/* Styling knop account bij hover */
 .account:hover {
     background-color: darkblue;
 }
 
+/* Styling unordered list met links */
 .hamburgerul {
     text-align: center;
     position: fixed;
@@ -176,6 +184,7 @@ nav ul li img {
     flex-flow: column;
 }
 
+/* Styling listitems */
 .hamburgerul li {
     margin: 10px 0;
     font-family: "avantgardebold";
@@ -183,22 +192,24 @@ nav ul li img {
     color: #0A3847;
 }
 
+/* Plaatsing hamburgermenu */
 .animator {
     transform: translate(-82%, 4%);
 }
 
 
-/* zoekbalk header */
+/* STYLING ZOEKBALK */
 
+/* Styling zoekformulier */
 form {
     display: flex;
     justify-content: center;
     padding: 16px 0 43.2px 0;
     width: 90%;
     margin-left: 5%;
-    width:
 }
 
+/* Styling inputfield */
 .zoekbalk {
     width: 209.69px;
     height: 48px;
@@ -210,6 +221,7 @@ form {
     border-bottom-left-radius: 3px;
 }
 
+/* Styling submitbutton */
 .zoek {
     background-color: #1574f5;
     color: white;
@@ -220,7 +232,7 @@ form {
     border-bottom-right-radius: 3px;
 }
 
-/* afbeelding header */
+/* Styling afbeelding header */
 .eten {
     background-image: url(../images/homepagefood.jpeg);
     width: 100%;
@@ -234,7 +246,7 @@ form {
 
 
 
-/* zo werkt thuisbezorgd.nl */
+/* "Zo werkt thuisbezorgd.nl" */
 
 article h3 {
     margin: 60px 0 10px;
@@ -244,7 +256,7 @@ article h3 {
     text-align: center;
 }
 
-/* super simpel! */
+/* "Super simpel!" */
 
 .oranjetekst {
     font-family: "avantgardebold";
@@ -254,23 +266,17 @@ article h3 {
     justify-content: center;
 }
 
-/* stappen thuisbezorgd */
 
+/* Styling stappen thuisbezorgd */
+
+/* Styling images stappen */
 article img {
     width: 140px;
     display: flex;
     margin: auto;
 }
 
-.stappen {
-    font-family: sans-serif;
-    font-size: 18px;
-    color: #0a3847;
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-}
-
+/* Styling tekst stappen */
 article p {
     font-family: sans-serif;
     font-size: 14px;
@@ -280,21 +286,32 @@ article p {
     margin: 10px 20px 20px;
 }
 
-/* opmaak unordered lists: stappen en voordelen */
+/* Styling spans stappen */
+.stappen {
+    font-family: sans-serif;
+    font-size: 18px;
+    color: #0a3847;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+/* Opmaak unordered lists: stappen en voordelen */
 
 article ul {
     padding: 20px;
     list-style: none;
 }
 
-/* link naar video met stappen*/
+/* Link naar video met stappen*/
 
 ul li a p {
     color: #1574f5;
 
 }
 
-/* addvertentie van app thuisbezorgd */
+/* Styling advertentie app thuisbezorgd */
 
 .app {
     width: 100%;
@@ -330,7 +347,7 @@ ul li a p {
 }
 
 
-/* voordelen thuisbezorgd */
+/* Styling onderdeel voordelen thuisbezorgd */
 
 .voordelen {
     background-color: #f8f5f2;
@@ -373,7 +390,7 @@ ul li a p {
     height: 18px;
 }
 
-/* tekst voordelen thuisbezorgd */
+/* Styling tekst voordelen thuisbezorgd */
 
 article h4 {
     font-family: sans-serif;
@@ -388,6 +405,8 @@ article h4 {
     color: #666;
     margin: 20px;
 }
+
+/* Styling blog advertentie */
 
 .blog {
     text-align: center;
@@ -423,8 +442,16 @@ footer {
     background-color: #183945;
     color: white;
     padding-bottom: 53px;
+    text-align: center;
 }
 
+/* Styling thuisbezorgd logo */
+footer img {
+    width: 310px;
+    padding: 15px;
+}
+
+/* Styling social media iconen */
 .icons {
     display: flex;
     justify-content: center;
@@ -434,17 +461,7 @@ footer {
     margin: 10px;
 }
 
-
-footer {
-    text-align: center;
-}
-
-footer img {
-    width: 310px;
-    padding: 15px;
-
-}
-
+/* Styling "Follow us" */
 footer span {
     font-size: 16px;
     text-align: center;
@@ -454,6 +471,7 @@ footer span {
     margin: 15px;
 }
 
+/* Styling footer links */
 footer ul {
     text-align: left;
     padding: 15px;
@@ -483,13 +501,18 @@ footer a {
 /* Media query for tablet >768px  */
 @media screen and (min-width: 768px) {
 
+
+
     /* HEADER */
 
+
+
+    /* Styling afbeelding */
     .eten {
         height: 400px;
     }
 
-    /* hamburger menu */
+    /* Hamburger menu */
 
     .hamburgerul li {
         margin: 10px 0;
@@ -498,22 +521,29 @@ footer a {
         color: #0A3847;
     }
 
-    /* inhoud hamburger menu */
+    /* Inhoud hamburger menu */
     .hamburgerul li {
         margin-top: 30px;
     }
 
+    /* Plaatsing hamburgermenu */
     .animator {
         transform: translate(-90%, 2%);
     }
 
+
+
     /* MAIN */
 
+
+
+    /* Styling app advertentie */
     .app {
         background-size: cover;
         background-position: 40% 70%;
     }
 
+    /* Styling blog advertentie */
     .blog {
         display: flex;
         flex-flow: row;
@@ -523,8 +553,12 @@ footer a {
 /*Media query for desktop <992px */
 @media only screen and (min-width: 992px) {
 
+
+
     /* HEADER */
 
+
+    /* Styling titel, h1 */
     header h1 {
         font-size: 72px;
         text-align: center;
@@ -532,14 +566,17 @@ footer a {
         padding-right: 280px;
     }
 
+    /* Styling titel, h2 */
     header h2 {
         font-size: 26px;
     }
 
+    /* Plaatsing hamburgermenu */
     .animator {
         transform: translate(-95%, 2%);
     }
 
+    /* Styling inputfield */
     .zoekbalk {
         width: 550px;
         height: 48px;
@@ -547,6 +584,7 @@ footer a {
         margin: 30px 0 50px;
     }
 
+    /* Styling submitbutton */
     .zoek {
         width: 140px;
         height: 48px;
@@ -554,7 +592,12 @@ footer a {
         margin: 30px 0 50px;
     }
 
+
+
     /* MAIN */
+
+
+    /* Styling article ul */
     article ul {
         display: flex;
         flex-flow: row;
@@ -562,10 +605,13 @@ footer a {
         align-items: flex-start;
     }
 
+    /* Styling article listitems */
     article ul li {
         width: 400px;
     }
 
+
+    /* Styling app advertentie */
     .app {
         height: 500px;
         background-size: 28%;
@@ -585,6 +631,7 @@ footer a {
         display: block;
     }
 
+    /* Styling voordelen thuisbezorgd */
     .voordelen > ul {
         flex-flow: row;
     }
@@ -599,6 +646,7 @@ footer a {
         flex-flow: column;
     }
 
+    /* Styling blog advertentie */
     .blog h3,
     .blog p {
         width: 50%;
@@ -613,10 +661,17 @@ footer a {
         margin-top: 60px;
     }
 
+
+
+    /* FOOTER */
+
+
+    /* Styling social media icons */
     .icons {
         justify-content: space-around;
     }
 
+    /* Styling footer links */
     .links li {
         font-family: "avantgardebold";
         text-align: center;
@@ -640,6 +695,7 @@ footer a {
     width: 100%;
 }
 
+/* Styling navigatie detailpagina */
 .detailpagina nav {
     padding: 16px;
     margin: 0;
@@ -649,6 +705,7 @@ footer a {
     list-style: none;
 }
 
+/* Styling thuisbezorgdlogo navigatie */
 .detailpagina li img {
     width: 28px;
     height: 28px;
@@ -679,7 +736,7 @@ footer a {
     align-items: center;
 }
 
-
+/* Styling hamburgermenu detailpagina */
 .detailpagina .hamburger {
     padding: 0;
     margin: 8px;
@@ -697,6 +754,7 @@ footer a {
     margin: 5px;
 }
 
+/* Styling navigatie toolbar, bottom of screen */
 .detailpagina .toolbar {
     display: flex;
     z-index: 10;
@@ -737,7 +795,9 @@ footer a {
 }
 
 
+
 /* MAIN */
+
 
 
 .detailpagina main {
@@ -745,10 +805,12 @@ footer a {
     max-width: 100vw;
 }
 
+/* Styling images detailpagina */
 .detailpagina main img {
     width: 100%;
 }
 
+/* Styling titels */
 .detailpagina h1 {
     padding: 60px 20px;
     font-size: 25px;
@@ -764,10 +826,10 @@ footer a {
     padding: 10px;
 }
 
+/* Styling types of food, horizontal scroll */
 .typeoffood {
     background: #f8f5f2;
     overflow-x: scroll;
-    padding: 12.px;
     display: flex;
     flex-direction: row;
 }
@@ -787,7 +849,7 @@ footer a {
     color: white;
 }
 
-
+/* Styling resultaten detailpagina */
 .result {
     background-color: #fff;
     display: flex;
@@ -811,12 +873,12 @@ footer a {
     height: 18px;
 }
 
-.result div:nth-child(2) span {
+.result div:nth-child(2) article {
     display: flex;
     flex-wrap: wrap;
 }
 
-.result div:nth-child(2) span p {
+.result div:nth-child(2) article p {
     font-size: 14px;
 }
 
@@ -846,13 +908,16 @@ footer a {
 }
 
 
+
 /* FOOTER */
+
 
 
 .detailpagina footer {
     padding: 35px 42px 60px 42px;
 }
 
+/* Styling listitems detailpagina */
 .detailpagina footer li {
     padding: 0;
     margin: 30px 0;
@@ -860,14 +925,30 @@ footer a {
     text-align: center;
 }
 
+/* Styling listitems detailpagina bij hover */
 .detailpagina footer li:hover {
     text-decoration: underline;
     text-decoration-color: white;
 }
 
+
 /* Media query for extra responsive > 410px  */
 @media screen and (min-width: 410px) {
 
+
+    /* HEADER */
+
+
+    /* Styling navigatie toolbar detailpagina */
+    .detailpagina .toolbar ul li {
+        padding: 0 30%;
+    }
+
+
+    /* MAIN */
+
+
+    /* Styling resulaten detailpagina */
     .result div:first-child {
         width: 138px;
         height: auto;
@@ -884,12 +965,8 @@ footer a {
         height: auto;
     }
 
-    .result div span {
+    .result div article {
         padding-top: 60px;
-    }
-
-    .detailpagina .toolbar ul li {
-        padding: 0 30%;
     }
 
 }
@@ -897,6 +974,10 @@ footer a {
 
 /* Media query for extra responsive > 590px  */
 @media screen and (min-width: 590px) {
+
+
+    /* HEADER */
+
 
     .detailpagina .toolbar ul li {
         padding: 0 50%;
@@ -906,12 +987,15 @@ footer a {
 /* Media query for tablet >768px  */
 @media screen and (min-width: 768px) {
 
+
     /* HEADER */
 
+    /* Styling koppen */
     .detailpagina header h2 {
         font-size: 20px;
     }
 
+    /* Styling hamburgermenu */
     .detailpagina .hamburgerul li {
         margin: 10px 0;
         font-family: "avantgardebold";
@@ -944,8 +1028,12 @@ footer a {
         padding: 0 70%;
     }
 
+
+
     /* MAIN */
 
+
+    /* Styling koppen */
     .detailpagina h1 {
         font-size: 30px;
         padding: 70px;
@@ -955,7 +1043,11 @@ footer a {
         padding-left: 15px;
     }
 
+
+
     /* FOOTER */
+
+
 
     .detailpagina footer {
         padding-top: 20px;
@@ -967,45 +1059,56 @@ footer a {
         overflow: hidden;
     }
 
+    /* Styling listitems */
     .detailpagina footer li {
         float: left;
         font-size: 14px;
     }
 
+    /* Styling links */
     .detailpagina footer li a {
         text-align: center;
         padding: 0 16px;
         text-decoration: none;
     }
+}
+
+/*Media query for desktop <992px */
+@media only screen and (min-width: 992px) {
 
 
-    /*Media query for desktop <992px */
-    @media only screen and (min-width: 992px) {
+    /* HEADER */
 
-        /* HEADER */
-
-        .toolbar {
-            opacity: 0;
-        }
-
-        .typeoffood {
-            justify-content: center;
-        }
-
-        /* BODY */
-        .detailpagina h1 {
-            font-size: 40px;
-            padding: 120px 0;
-        }
-
-        .detailpagina h3 {
-            margin-left: 65px;
-        }
-
-        /* FOOTER */
-
-        .detailpagina .footer {
-            margin-bottom: 20px;
-        }
-
+    /* Styling toolbar, bottom of screen */
+    .toolbar {
+        opacity: 0;
     }
+
+
+    /* BODY */
+
+
+    /* Styling types of food, horizontal scroll */
+    .typeoffood {
+        justify-content: center;
+    }
+
+    /* Styling koppen */
+    .detailpagina h1 {
+        font-size: 40px;
+        padding: 120px 0;
+    }
+
+    .detailpagina h3 {
+        margin-left: 65px;
+    }
+
+
+    /* FOOTER */
+
+
+    .detailpagina .footer {
+        margin-bottom: 20px;
+    }
+
+}
